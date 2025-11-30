@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-shadow: 0 2px 8px black;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ff3f34;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #d63031;
+        }
+
+        /* Products */
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .product-grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e84118;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #0652dd;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Best Deals of the Year</h2>
+        <p>Up to 50% Off on Electronics & Accessories</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01" alt="Phone">
+                <h3>Smartphone Pro</h3>
+                <p class="price">₹59,999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+                <h3>Ultra Laptop</h3>
+                <p class="price">₹79,499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Camera">
+                <h3>Digital Camera</h3>
+                <p class="price">₹24,999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" alt="Watch">
+                <h3>Smartwatch Z</h3>
+                <p class="price">₹8,999</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2025 ShopEase | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
